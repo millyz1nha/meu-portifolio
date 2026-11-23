@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio pessoal e acadêmico de uma estudante de Ciência da Computação."
+    />
+    <title>Meu Portfólio | Início</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">&lt;/&gt;</span>
+          Emilly França Gama
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="./pages/sobre.html">Sobre mim</a></li>
+          <li><a href="./pages/projetos.html">Projetos</a></li>
+          <li><a href="./pages/pessoal.html">Além da programação</a></li>
+          <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- APRESENTAÇÃO -->
+      <section class="hero">
+        <div class="hero-content">
+          <span class="welcome">
+            <span class="status-dot"></span>
+            Bem-vindo(a) ao meu espaço!
+          </span>
+
+          <h1>Olá, eu sou a <span>Emilly!</span></h1>
+
+          <h2>Estudante de Ciência da Computação</h2>
+
+          <p>
+            Entre códigos, ideias e novos aprendizados, estou construindo minha
+            trajetória no mundo da tecnologia. Este espaço reúne um pouco de
+            quem sou, do que gosto e dos projetos que já desenvolvi.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="./pages/projetos.html" class="btn-primary">
+              Conheça meus projetos
+              <span>→</span>
+            </a>
+
+            <a href="./pages/sobre.html" class="btn-secondary"> Sobre mim </a>
+          </div>
+
+          <div class="hero-footer">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Aprendizado contínuo</span>
+          </div>
+        </div>
+
+        <!-- FOTO DE APRESENTAÇÃO -->
+        <div class="hero-visual">
+          <div class="hero-photo-frame">
+            <img
+              src="./pages/img/emilly-home.png"
+              alt="Emilly em seu retrato de apresentação"
+              class="hero-photo"
+            />
+          </div>
+
+          <div class="photo-decoration photo-decoration-one">&lt;/&gt;</div>
+          <div class="photo-decoration photo-decoration-two">{ }</div>
+        </div>
+      </section>
+
+      <!-- PRÉVIA DAS SEÇÕES -->
+      <section class="explore">
+        <div class="section-heading">
+          <span class="section-label">EXPLORE O PORTFÓLIO</span>
+          <h2>Um pouco de tudo que me representa.</h2>
+          <p>
+            Conheça minha história, meus projetos e aquilo que faz parte da
+            minha vida dentro e fora da tecnologia.
+          </p>
+        </div>
+
+        <div class="explore-grid">
+          <a href="./pages/sobre.html" class="explore-card">
+            <span class="explore-icon">01</span>
+            <h3>Sobre mim</h3>
+            <p>Minha história, formação e trajetória na tecnologia.</p>
+            <span class="card-link">Conhecer mais →</span>
+          </a>
+
+          <a href="./pages/projetos.html" class="explore-card">
+            <span class="explore-icon">02</span>
+            <h3>Meus projetos</h3>
+            <p>Um pouco do que já desenvolvi e aprendi programando.</p>
+            <span class="card-link">Ver projetos →</span>
+          </a>
+
+          <a href="./pages/pessoal.html" class="explore-card">
+            <span class="explore-icon">03</span>
+            <h3>Além da programação</h3>
+            <p>Meus interesses, hobbies e momentos fora dos estudos.</p>
+            <span class="card-link">Descobrir mais →</span>
+          </a>
+
+          <a href="./pages/contato.html" class="explore-card">
+            <span class="explore-icon">04</span>
+            <h3>Contato</h3>
+            <p>Onde me encontrar e acompanhar meus trabalhos.</p>
+            <span class="card-link">Entrar em contato →</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <p>Desenvolvido por Emilly França Gama</p>
+
+      <p>
+        © <span id="current-year"></span>
+        • Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

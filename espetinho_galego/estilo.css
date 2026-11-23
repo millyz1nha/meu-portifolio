@@ -1,0 +1,202 @@
+/* Estilo base e fonte */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #1a1a1a;
+}
+
+/* Layout principal com menu e conteúdo */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* MENU LATERAL */
+.menu-lateral {
+  background-color: #f7b741; /* Amarelo Simpsons */
+  width: 240px;
+  padding: 2rem 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-lateral .logo {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.menu-lateral nav a {
+  display: block;
+  margin: 12px 0;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.menu-lateral nav a:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Botão extra de destaque */
+.btn-precos {
+  background-color: #0056b3;
+  color: white !important;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.hero {
+  background-color: #955403;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.sobre {
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* TÍTULOS */
+h1,
+h2,
+h3 {
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: #000;
+  border-left: 4px solid #f7b741;
+  padding-left: 0.5rem;
+}
+
+.cardapio {
+  color: #000;
+  border-left: 4px solid #f7b741;
+  padding-left: 0.5rem;
+}
+
+th {
+  background-color: #f7b741;
+}
+
+.descricao {
+  background-color: #e3a26c3a;
+  border-radius: 1000px;
+  text-align: center;
+  color: #000;
+}
+
+.botao {
+  background-color: #f7b741;
+  transition: 0.3s;
+}
+
+.botao :hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* CARDS DE IMAGEM */
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 25%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* CONTAINER COM MENSAGENS OU INFO */
+.container {
+  background-color: rgba(0, 85, 179, 0.08);
+  color: #000;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* TABELAS */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* FORMULÁRIO */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  font-size: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #955403;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #703402;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #eee;
+  margin-top: 2rem;
+  border-radius: 12px;
+}

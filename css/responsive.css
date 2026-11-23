@@ -1,0 +1,713 @@
+/* TABLETS */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 65px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-footer {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    max-width: 550px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 17px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: var(--surface);
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 10;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 5px;
+  }
+
+  .hero {
+    padding: 65px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 17px;
+  }
+
+  .hero-content > p {
+    font-size: 14px;
+  }
+
+  .hero-visual {
+    padding: 15px 10px;
+  }
+
+  .code-content {
+    font-size: 11px;
+    padding: 25px 15px;
+  }
+
+  .explore {
+    padding: 60px 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-card p {
+    min-height: auto;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons a {
+    text-align: center;
+  }
+}
+
+/* RESPONSIVIDADE - PÁGINA SOBRE MIM */
+
+@media (max-width: 900px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 65px 30px;
+  }
+
+  .about-intro {
+    text-align: center;
+  }
+
+  .about-intro p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-highlight {
+    max-width: 550px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .about-intro .btn-primary {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-hero {
+    padding: 55px 20px;
+  }
+
+  .about-intro h1 {
+    font-size: 36px;
+  }
+
+  .about-intro h2 {
+    font-size: 17px;
+  }
+
+  .about-intro p {
+    font-size: 14px;
+  }
+
+  .about-section {
+    padding: 55px 20px;
+  }
+
+  .skills-grid,
+  .experience-content {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    padding: 20px;
+  }
+
+  .about-cta {
+    margin: 30px 20px 60px;
+    padding: 40px 20px;
+  }
+}
+
+/* RESPONSIVIDADE - PROJETOS */
+
+@media (max-width: 900px) {
+  .projects-page {
+    padding: 70px 6%;
+  }
+
+  .project-row {
+    grid-template-columns: 75px minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .project-number {
+    width: 72px;
+    height: 72px;
+  }
+
+  .project-number span {
+    font-size: 2rem;
+  }
+
+  .project-action {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-page {
+    padding: 55px 6%;
+  }
+
+  .project-list {
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .project-row {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .project-number {
+    width: 58px;
+    height: 58px;
+    border-radius: 11px;
+    box-shadow: 5px 5px 0 rgba(120, 110, 220, 0.12);
+  }
+
+  .project-number span {
+    font-size: 1.7rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .project-content p {
+    font-size: 0.87rem;
+  }
+
+  .project-category {
+    font-size: 0.65rem;
+  }
+
+  .project-action {
+    grid-column: 2;
+  }
+}
+
+/* AJUSTES DE TAMANHO - PÁGINA DE PROJETOS */
+
+.projects-page {
+  padding: 65px 8%;
+}
+
+.project-list {
+  gap: 17px;
+  margin-top: 35px;
+}
+
+.project-row {
+  grid-template-columns: 70px minmax(0, 1fr) auto;
+  gap: 22px;
+  padding: 21px;
+}
+
+.project-number {
+  width: 66px;
+  height: 66px;
+}
+
+.project-number span {
+  font-size: 1.9rem;
+}
+
+.project-content h3 {
+  font-size: 1.25rem;
+  margin: 7px 0;
+}
+
+.project-content p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.project-category {
+  font-size: 0.68rem;
+}
+
+.project-tags {
+  gap: 7px;
+}
+
+.project-tags span {
+  padding: 5px 10px;
+  font-size: 0.7rem;
+}
+
+.project-action a {
+  padding: 10px 16px;
+  font-size: 0.85rem;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+  .projects-page {
+    padding: 55px 6%;
+  }
+
+  .project-row {
+    grid-template-columns: 62px minmax(0, 1fr);
+    gap: 18px;
+    padding: 19px;
+  }
+
+  .project-number {
+    width: 60px;
+    height: 60px;
+  }
+
+  .project-action {
+    grid-column: 2;
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+  .projects-page {
+    padding: 45px 6%;
+  }
+
+  .project-list {
+    gap: 15px;
+    margin-top: 28px;
+  }
+
+  .project-row {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 15px;
+    padding: 16px;
+  }
+
+  .project-number {
+    width: 50px;
+    height: 50px;
+  }
+
+  .project-number span {
+    font-size: 1.5rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.08rem;
+  }
+
+  .project-content p {
+    font-size: 0.82rem;
+  }
+}
+
+/* =====================================
+   RESPONSIVIDADE - ALÉM DA PROGRAMAÇÃO
+===================================== */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+  .personal-page {
+    padding: 55px 6%;
+  }
+
+  .family-gallery {
+    grid-template-rows: repeat(2, 125px);
+  }
+
+  .experience-gallery figure {
+    height: 180px;
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+  .personal-page {
+    padding: 45px 6%;
+  }
+
+  .personal-section {
+    padding: 19px;
+    margin-bottom: 18px;
+  }
+
+  .personal-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .family-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, 125px);
+  }
+
+  .family-gallery .family-main {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .experience-gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .experience-gallery figure {
+    height: 220px;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-image {
+    height: 200px;
+  }
+}
+
+/* =====================================
+   RESPONSIVIDADE - PÁGINA PESSOAL
+===================================== */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+  .personal-page {
+    padding: 55px 6%;
+  }
+
+  /* FAMÍLIA */
+
+  .family-gallery {
+    grid-template-columns:
+      minmax(0, 1.15fr)
+      minmax(0, 0.55fr)
+      minmax(0, 0.95fr);
+
+    grid-template-rows: repeat(2, 175px);
+    gap: 10px;
+  }
+
+  /* PASSEIOS */
+
+  .experience-gallery figure {
+    height: 180px;
+  }
+
+  /* FILMES E LIVROS */
+
+  .interest-item {
+    grid-template-columns:
+      minmax(125px, 0.8fr)
+      minmax(0, 1.2fr);
+  }
+
+  .interest-content {
+    padding: 15px;
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+  .personal-page {
+    padding: 45px 6%;
+  }
+
+  .personal-section {
+    padding: 19px;
+    margin-bottom: 18px;
+  }
+
+  .personal-section h2 {
+    font-size: 1.3rem;
+  }
+
+  /* FAMÍLIA */
+
+  .family-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* Foto principal */
+
+  .family-gallery .family-main {
+    grid-column: 1 / -1;
+    grid-row: auto;
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.2;
+  }
+
+  /* Jhon e Chloe - retrato */
+
+  .family-gallery figure:nth-child(2),
+  .family-gallery figure:nth-child(4) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    align-self: center;
+  }
+
+  /* Pedro - paisagem */
+
+  .family-gallery figure:nth-child(3) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    align-self: center;
+  }
+
+  /* Amigas - paisagem */
+
+  .family-gallery figure:nth-child(5) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    align-self: center;
+  }
+
+  /* PASSEIOS */
+
+  .experience-gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .experience-gallery figure {
+    height: 220px;
+  }
+
+  /* FILMES E LIVROS */
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .interest-item {
+    grid-template-columns:
+      minmax(125px, 0.8fr)
+      minmax(0, 1.2fr);
+  }
+
+  .interest-image {
+    aspect-ratio: 0.68;
+  }
+
+  .interest-content {
+    padding: 16px;
+  }
+
+  .interest-content h3 {
+    font-size: 1.08rem;
+  }
+
+  .interest-content p {
+    font-size: 0.82rem;
+  }
+}
+/* RESPONSIVIDADE DAS FOTOGRAFIAS */
+
+@media (max-width: 650px) {
+  .personal-photos {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    gap: 25px;
+  }
+
+  .photo-wrapper {
+    height: 380px;
+  }
+
+  .photo-caption {
+    padding: 20px;
+  }
+
+  .photo-caption h3 {
+    font-size: 17px;
+  }
+}
+
+/* FOTO DA PÁGINA INICIAL */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+  }
+
+  .hero-photo-frame {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    padding: 15px;
+  }
+
+  .hero-photo-frame {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .photo-decoration {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+/* =====================================
+   RESPONSIVIDADE - CONTATO
+===================================== */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+  .contact-intro {
+    padding: 70px 30px 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .contact-card:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 9px);
+    width: 100%;
+    justify-self: center;
+  }
+
+  .contact-section {
+    padding: 30px 6% 60px;
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+  .contact-intro {
+    padding: 55px 20px 35px;
+  }
+
+  .contact-intro h1 {
+    font-size: 36px;
+  }
+
+  .contact-intro p {
+    font-size: 14px;
+  }
+
+  .contact-section {
+    padding: 25px 20px 45px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-card,
+  .contact-card:last-child {
+    grid-column: auto;
+    max-width: 100%;
+    min-height: 275px;
+    padding: 25px;
+  }
+
+  .contact-card h2 {
+    font-size: 21px;
+  }
+
+  .contact-end {
+    margin: 10px 20px 55px;
+    padding: 35px 10px;
+  }
+
+  .contact-end h2 {
+    font-size: 23px;
+  }
+
+  .contact-end p {
+    font-size: 13px;
+  }
+}
